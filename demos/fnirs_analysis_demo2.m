@@ -1,4 +1,4 @@
-%% This is a second demo of the analysis.  
+ %% This is a second demo of the analysis.  
 % This demo will cover slightly more advanced topics including:
 %   Using the FIR deconvolution model
 %   Student t-test contrast from the FIR model
