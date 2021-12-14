@@ -61,6 +61,7 @@ classdef ChannelFStats
         
         % p values
         function p = get.p( obj )
+<<<<<<< Updated upstream
             
             if(length(obj.df1)==1)
                 obj.df1=obj.df1*ones(size(obj.F));
@@ -73,6 +74,11 @@ classdef ChannelFStats
             for i=1:numel(obj.F)
                 p(i)=fcdf(1./obj.F(i), obj.df2(i), obj.df1(i));
             end
+=======
+            e=1./obj.df2;
+            p=fcdf( obj.F, e.*obj.df2, e.*obj.df1 ,'upper');
+
+>>>>>>> Stashed changes
             
         end
         
